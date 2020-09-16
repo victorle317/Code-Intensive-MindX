@@ -1,0 +1,178 @@
+.hexagon {
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: #64C7CC;
+  margin: 43.30px 0;
+  border-left: solid 5px #000000;
+  border-right: solid 5px #000000;
+  opacity: 0.2;
+  -webkit-transition: opacity;
+  transition: opacity;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 16.9670px;
+}
+
+.hexagon:before {
+  top: -53.0330px;
+  border-top: solid 7.0711px #000000;
+  border-right: solid 7.0711px #000000;
+}
+
+.hexagon:after {
+  bottom: -53.0330px;
+  border-bottom: solid 7.0711px #000000;
+  border-left: solid 7.0711px #000000;
+}
+
+.hexagon1 {
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: #4c00ff;
+  margin: 43.30px 0;
+}
+
+.hexagon1:before,
+.hexagon1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon1:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid #4c00ff;
+}
+
+.hexagon1:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid #4c00ff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.counter {
+  position: relative;
+}
+
+.number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: xx-large;
+  position: absolute;
+  text-align: center;
+}
+
+@-webkit-keyframes isOn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes isOn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes isOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes isOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.isOn {
+  opacity: 1;
+  -webkit-animation: isOn 0.5s linear;
+          animation: isOn 0.5s linear;
+}
+
+.isOff {
+  opacity: 0.2;
+  -webkit-animation: isOff 0.5s linear;
+          animation: isOff 0.5s linear;
+}
+
+body {
+  background-color: white;
+}
+
+.loader-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1031;
+}
+
+#firstLottie {
+  width: 15vw;
+  height: 15vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* z-index: -1; */
+}
+/*# sourceMappingURL=main.css.map */
