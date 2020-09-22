@@ -89,6 +89,8 @@
     function removeDuplicates(array) {
         return array.filter((a, b) => array.indexOf(a) === b)
     };
+    // 2 phần tử có giá trị giống nhau nhưng vị trí chắc chắn khác nhau nên dùng hàm trên indexOf
+    //If the item is present more than once, the indexOf method returns the position of the first occurence.
     console.log(removeDuplicates([1,2,3,4,4,5,2,2]))
 })();
 
